@@ -7,7 +7,9 @@ module.exports = {
         NODE_ENV: "production",
       },
       instances  : 3,
-      max_memory_restart: "200M"
+      max_memory_restart: "200M",
+      exec_mode: "cluster",
+      error_file: "./logs/err.log"
     },
   ],
 };
